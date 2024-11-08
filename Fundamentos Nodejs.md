@@ -21,3 +21,13 @@ Características:
 - Orientado a eventos
     - Hay un bucle de eventos que se ejecuta constantemente.
     - Puedes orientar tu código de forma reactiva.
+
+Eventloop: Asincronía por diseño.
+
+ - Un proceso de un un bucle que gestiona, de forma asíncrona, todos los eventos de una apliación.
+
+ - Event Queue: Contiene todos los eventos que se generan en nuestro código, estos eventos quedan en una cola que va pasando uno a uno al event loop.
+
+ - Event loop: Se encarga de resolver los eventos ultrarapidos que llegan desde el event queue, en caso de no poder resolverlo rápido envía los eventos al thread pool.
+
+ - Thread pool: Se encarga de gestionar los eventos de forma asíncrona. Una vez terminado al event loop 
